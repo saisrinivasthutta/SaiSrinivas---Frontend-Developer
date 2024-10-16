@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './components/Home'
+import FeaturesSection from './components/FeaturesSection'
+import AboutSection from './components/AboutSection'
+import Tokenomics from './components/Tokenomics'
+import RoadmapSection from './components/RoadmapSection'
+import Footer from './components/Footer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './App.css'
 
-export default App;
+const App = () => (
+  <>
+    <Home />
+    <section id="features">
+      <FeaturesSection />
+    </section>
+    <section id="why-us">
+      <AboutSection />
+    </section>
+    <section id="tokenomics">
+      <Tokenomics />
+    </section>
+    <section id="roadmap">
+      <RoadmapSection />
+    </section>
+    <Footer />
+  </>
+)
+
+export default App
